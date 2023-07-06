@@ -1,0 +1,10 @@
+[2023-07-01 18:48:02,122] 22 root - INFO - Data ingestion method start
+[2023-07-01 18:48:02,132] 27 root - INFO - Explored collection as DataFrame
+[2023-07-01 18:48:02,142] 33 root - INFO - Dataset read as pandas DataFrame
+[2023-07-01 18:48:02,145] 37 root - INFO - train test split
+[2023-07-01 18:48:02,154] 42 root - INFO - Ingestion of Data is completed
+[2023-07-01 18:48:02,185] 56 root - INFO - Read test and train file is Completed
+[2023-07-01 18:48:02,185] 23 root - INFO - Data Transformation initiate
+[2023-07-01 18:48:02,199] 25 root - INFO - Splitting dependent and independent variables from train and test data
+[2023-07-01 18:48:02,454] 41 root - INFO - model report : {'xgb_classifire': 0.7960199004975125, 'gaussian_nb': 0.8059701492537313}
+[2023-07-01 18:48:02,456] 54 root - INFO - best model found : gaussian_nb , best model score : 0.8059701492537313

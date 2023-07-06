@@ -1,0 +1,18 @@
+[2023-07-06 14:34:35,133] 224 werkzeug - WARNING -  * Debugger is active!
+[2023-07-06 14:34:35,138] 224 werkzeug - INFO -  * Debugger PIN: 106-321-406
+[2023-07-06 14:34:55,971] 22 root - INFO - Data ingestion method start
+[2023-07-06 14:34:55,986] 27 root - INFO - Explored collection as DataFrame
+[2023-07-06 14:34:56,004] 33 root - INFO - Dataset read as pandas DataFrame
+[2023-07-06 14:34:56,007] 37 root - INFO - train test split
+[2023-07-06 14:34:56,022] 42 root - INFO - Ingestion of Data is completed
+[2023-07-06 14:34:56,052] 56 root - INFO - Read test and train file is Completed
+[2023-07-06 14:34:56,052] 23 root - INFO - Data Transformation initiate
+[2023-07-06 14:34:56,065] 25 root - INFO - Splitting dependent and independent variables from train and test data
+[2023-07-06 14:34:56,419] 41 root - INFO - model report : {'xgb_classifire': 0.7960199004975125, 'gaussian_nb': 0.8059701492537313}
+[2023-07-06 14:34:56,423] 54 root - INFO - best model found : gaussian_nb , best model score : 0.8059701492537313
+[2023-07-06 14:34:56,425] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2023 14:34:56] "GET /train HTTP/1.1" 200 -
+[2023-07-06 14:36:30,142] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2023 14:36:30] "[35m[1mGET /upload HTTP/1.1[0m" 500 -
+[2023-07-06 14:36:30,183] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2023 14:36:30] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2023-07-06 14:36:30,194] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2023 14:36:30] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2023-07-06 14:36:30,269] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2023 14:36:30] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2023-07-06 14:36:30,284] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2023 14:36:30] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

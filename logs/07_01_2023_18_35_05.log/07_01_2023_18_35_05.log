@@ -1,0 +1,8 @@
+[2023-07-01 18:35:05,928] 22 root - INFO - Data ingestion method start
+[2023-07-01 18:35:05,937] 27 root - INFO - Explored collection as DataFrame
+[2023-07-01 18:35:05,948] 33 root - INFO - Dataset read as pandas DataFrame
+[2023-07-01 18:35:05,951] 37 root - INFO - train test split
+[2023-07-01 18:35:05,967] 42 root - INFO - Ingestion of Data is completed
+[2023-07-01 18:35:06,007] 56 root - INFO - Read test and train file is Completed
+[2023-07-01 18:35:06,007] 23 root - INFO - Data Transformation initiate
+[2023-07-01 18:35:06,007] 94 root - INFO - Exception occured in initiate_data_transformation
