@@ -27,23 +27,24 @@ def train_route():
         raise CustomException(e , sys)
     
 
-@app.route("/predict" , methods = ['GET' , 'POST'])
-def predict():
-    try:
+# @app.route("/predict" , methods = ['GET' , 'POST'])
+# def predict():
+#     try:
 
-        if request.method=="POST":
-            data = dict(request.form.items())
-            print(data)
-            return jsonify("Done")
+#         if request.method=="POST":
+#             data = dict(request.form.items())
+#             print(data)
+
+#             return jsonify("Done")
         
-    except Exception as e:
-        logging.info("Exception occured in predict")
-        raise CustomException(e , sys)
+#     except Exception as e:
+#         logging.info("Exception occured in predict")
+#         raise CustomException(e , sys)
     
 
 
 
-@app.route("/upload" , methods = ['GET' , "POST"])
+@app.route("/predict" , methods = ['GET' , "POST"])
 def upload():
     try:
 
@@ -52,9 +53,13 @@ def upload():
             prediction_file_detail = prediction_pipeline.run_pipeline()
 
             logging.info("Prediction completed Downloading Prediction file")
-            return send_file(prediction_file_detail.prediction_file_name ,
+            return send_file(prediction_file_detail.prediction_file_path ,
                              download_name= prediction_file_detail.prediction_file_name,
                              as_attachment=True)
+        
+
+        else:
+            return render_template('upload_file.html')
 
 
 
@@ -65,4 +70,4 @@ def upload():
 
 
 if __name__=='__main__':
-    app.run(host='127.0.0.2' , port=5000 , debug=True)
+    app.run(host='127.23.0.0' , port=5000 , debug=True)
